@@ -1,0 +1,15 @@
+def fibonacci(a):
+    l=[0,1,1]
+    for i in range(2,a+1):
+        if i==l[-1]+l[-2]:
+            l.append(i)
+    print(l)
+    if a in l:
+        print("%d is in the fibonacci seies"%a)
+    else:
+        print("%d is not in the fibonaccie series"%a)
+
+
+
+a=int(input("enter a number= "))
+fibonacci(a)
